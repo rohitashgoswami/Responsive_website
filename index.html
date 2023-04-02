@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Online Food Delivery Service in India |MyOnlineMeals.com</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone.css">
+    <!-- <link rel="stylesheet" media="screen and (max-width: 780px)" href="phone.css"> -->
+    <link rel="stylesheet" media="screen and (min-width: 680px)" href="./css/tablet-screen.css">
+    <link rel="stylesheet" media="screen and (min-width: 1080px)" href="/css/desktop-screen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <nav id="navbar">
@@ -27,7 +30,7 @@
         <p>Lorem Ipsum dolor sit amet consectetur, adipisicing el1t. Perferendis dolorum 
         numquan minus. </p>
         <p>Lorem Ipsum dolor sit amet consectetur, adipisicing el1t. </p>
-        <button class="btn">Order Now</button>
+        <button class="btn" id="order_now_button">Order Now</button>
     </section>
 
     <section id="services-container">
@@ -55,7 +58,7 @@
         <h1 class="h-primary center">Our Clients</h1>
         <div id="clients">
             <div class="client-item">
-                <img src="https://image.pngaaa.com/436/1845436-middle.png" alt="Our Client">
+                <img src="./assets/apple-logo.png" alt="Our Client">
             </div>
             <div class="client-item">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Skype_logo_%28fully_transparent%29.svg/1280px-Skype_logo_%28fully_transparent%29.svg.png" alt="Our Client">
@@ -68,7 +71,8 @@
 
     <section id="contact">
         <h1 class="h-primary center">Contact Us</h1>
-        <div id="contact-box">
+        <!-- This should not be a id, id should be used in case when -->
+        <div id="contact-box"> 
             <form action="">
                 <div class="form-group">
                     <label for="name">Name</label>
@@ -84,8 +88,9 @@
                 </div>
                 <div class="form-group">
                     <label for="massage">Massage</label>
-                    <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+                    <textarea name="massage" id="message" cols="30" rows="10"></textarea>
                 </div>
+                <button class="btn" id="submit_button" type="submit">Submit Details</button>
             </form>
         </div>
     </section>
@@ -95,5 +100,7 @@
             copyright &copy; www.MyOnlineMeal.com All rights reserved
         </div>
     </footer>
+
+    <script src="./scripts/index.js" type="text/javascript" ></script>
 </body>
 </html>

@@ -18,6 +18,7 @@ html{
     align-items: center;
     position: sticky;
     top: 0px;
+    z-index: 1;
 }  
 #navbar::before{
     content: "";
@@ -180,6 +181,8 @@ html{
     padding: 0.5rem;
     border-radius: 9px;
     font-size: 1.1rem;
+    border: 1px solid #ccc;
+    outline: none;
 }
 
 #contact-box form{
@@ -221,4 +224,18 @@ footer{
 }
 .center{
     text-align: center;
+}
+
+/* Add differentt media queries here */
+
+@media screen and (max-width: 1800px) {
+    #contact-box form {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    #contact-box form {
+        width: 80%;
+    }
 }
